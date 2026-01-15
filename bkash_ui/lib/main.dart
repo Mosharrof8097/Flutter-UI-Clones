@@ -1,4 +1,5 @@
-import 'package:bkash_ui/beginapp/tabpage.dart';
+import 'package:bkash_ui/screen/flashscreen.dart';
+import 'package:bkash_ui/screen/welcomescreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home:Tabpage() ,
+      // home:Tabpage() ,
+      home: Flashscreen(),
     );
   }
 }
