@@ -1,3 +1,4 @@
+import 'package:bkash_ui/screen_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -13,10 +14,11 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body:pages[currentIndex] ,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
-        selectedItemColor: Color(0xFFDE1670),
-        unselectedItemColor: Colors.white,
+       selectedItemColor:Color(0xFFDE1670), 
+       unselectedItemColor: Colors.black12,
 
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.transparent,
