@@ -1,4 +1,6 @@
 import 'package:bkash_ui/screen/home/Widget/balance_widget.dart';
+import 'package:bkash_ui/screen/home/Widget/icon_grid.dart';
+import 'package:bkash_ui/screen/home/Widget/icon_list.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -91,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               /// Body
-              Expanded(child: Container(color: Colors.grey.shade100)),
+             IconGrid(itemCount:iconList.length )
             ],
           ),
         ],
