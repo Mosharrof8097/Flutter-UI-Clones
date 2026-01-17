@@ -13,9 +13,9 @@ class IconGrid extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 4,
-        mainAxisSpacing: 14,
+        mainAxisSpacing:  8,
         crossAxisSpacing: 8,
-         childAspectRatio: 0.75, 
+         childAspectRatio: 0.85, 
       ),
       itemCount: itemCount,
       itemBuilder: (context, index) {
