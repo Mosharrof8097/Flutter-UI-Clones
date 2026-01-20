@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 final List<IconTextItem> iconTextList = [
   IconTextItem(
     icon: Icons.phone_android,
-    title: "Mobile Recharge",
+    title: "Mosha..",
   ),
   IconTextItem(
     icon: Icons.lock_outline,

@@ -21,12 +21,12 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100], // Light background for better UI
+      backgroundColor: Colors.white, 
       body: Column(
         children: [
           /// 1. FIXED CUSTOM APP BAR
           Container(
-            height: 130, // Adjusted height for a cleaner look
+            height: 130, 
             width: double.infinity,
             padding: const EdgeInsets.symmetric(horizontal: 16),
             decoration: const BoxDecoration(color: Color(0xFFDE1670)),
@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Image.asset(
                   "assets/images/bkashlogo.png",
                   height: 30,
-                  color: Colors.white,
+                  
                 ),
               ],
             ),
@@ -116,8 +116,19 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             const SizedBox(height: 20),
+                            Column(
+                           
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(" Quick Feature",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                                const SizedBox(height: 10),
+                                IconTextList(items: iconTextList),
+                              ],
+                            ),
+                            const SizedBox(height: 10),
                             /// Horizontal Icon List
-                            IconTextList(items: iconTextList),
+                            
                             
                             /// Extra space/content to ensure scrolling is visible
                             const SizedBox(height: 20),
