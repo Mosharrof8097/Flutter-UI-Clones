@@ -1,4 +1,5 @@
 import 'package:bkash_ui/navigation/bottom_nav.dart';
+import 'package:bkash_ui/screen/feature/appBar_feature/appbar_feature.dart';
 import 'package:bkash_ui/screen/flashscreen.dart';
 import 'package:bkash_ui/screen/welcomescreen.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       // home:Tabpage() ,
       // home: Flashscreen(),
       home: BottomNav(),
+      // home:  AppbarFeature(),
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 
-class BalanceWidgetBOX extends StatelessWidget {
-  const BalanceWidgetBOX({super.key});
+class BalanceinfoBox extends StatelessWidget {
+  const BalanceinfoBox({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,10 +10,10 @@ class BalanceWidgetBOX extends StatelessWidget {
       flipOnTouch: true,
       direction: FlipDirection.VERTICAL, // vertical চাইলে VERTICAL
       front: _buildBox(
-        text: "আপনার বর্তমান ব্যালেন্স",
+        text: "আপনার সাথে সবসময়",
       ),
       back: _buildBox(
-        text: "0.0",
+        text: "💖 বিকাশের সাথে ৫ বছর",
       ),
     );
   }
@@ -41,7 +41,3 @@ class BalanceWidgetBOX extends StatelessWidget {
     );
   }
 }
-
-
-
-//
