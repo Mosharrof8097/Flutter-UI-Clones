@@ -14,12 +14,12 @@ class IconTextList extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4.0),
       child: Row(
-        // ৩টি কার্ডকে সমান দূরত্বে রাখার জন্য spaceBetween ব্যবহার করা হয়েছে
+        
         mainAxisAlignment: MainAxisAlignment.spaceBetween, 
         children: items.map((item) {
           return Expanded( // প্রতিটি কার্ড যেন সমান জায়গা পায় তার জন্য Expanded
             child: Card(
-              elevation: 1.5,
+              elevation: .5,
               margin: const EdgeInsets.symmetric(horizontal: 4), // কার্ডগুলোর মাঝের গ্যাপ
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
@@ -46,11 +46,11 @@ class IconTextList extends StatelessWidget {
 
                     const SizedBox(width: 4),
 
-                    /// Text with Ellipsis (...)
+                   
                     Expanded(
                       child: Text(
                         item.title,
-                        maxLines: 1, // লেখা এক লাইনে থাকবে
+                        maxLines: 1, 
                         overflow: TextOverflow.ellipsis, // বড় লেখা হলে শেষে ... দেখাবে
                         style: const TextStyle(
                           fontSize: 11, // কার্ড ছোট হওয়ার কারণে ফন্ট সাইজ কমানো হয়েছে
@@ -63,7 +63,8 @@ class IconTextList extends StatelessWidget {
               ),
             ),
           );
-        }).toList(),
+        }
+        ).toList(),
       ),
     );
   }

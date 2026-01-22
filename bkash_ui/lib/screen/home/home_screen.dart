@@ -4,6 +4,8 @@ import 'package:bkash_ui/screen/home/Widget/icon_list.dart';
 import 'package:bkash_ui/screen/home/imageWidge/image_slider.dart';
 import 'package:bkash_ui/screen/home/imageWidge/imagecardlist.dart';
 import 'package:bkash_ui/screen/home/imageWidge/semorebtn.dart';
+import 'package:bkash_ui/screen/home/quick_feature/aditional_feature/aditional_list.dart';
+import 'package:bkash_ui/screen/home/quick_feature/aditional_feature/aditional_weidget.dart';
 import 'package:bkash_ui/screen/home/quick_feature/quick_list.dart';
 import 'package:bkash_ui/screen/home/quick_feature/quick_weidge.dart';
 import 'package:flutter/material.dart';
@@ -81,16 +83,16 @@ class _HomeScreenState extends State<HomeScreen> {
               physics: const BouncingScrollPhysics(),
               child: Column(
                 children: [
-                  /// Grid Section
-                  // Passing seeMore state to IconGrid if it handles its own height logic
+                 
+
                   IconGrid(itemCount: seeMore ? iconList.length : 8),
 
-                  /// Banner & See More Section
+                  
                   Stack(
                     clipBehavior: Clip.none,
                     alignment: Alignment.topCenter,
                     children: [
-                      /// Main Content Area below the Grid
+                  
                       Padding(
                         padding: const EdgeInsets.fromLTRB(16, 20, 16, 20),
                         child: Column(
@@ -124,22 +126,25 @@ class _HomeScreenState extends State<HomeScreen> {
                                 Text(" Quick Feature",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 10),
                                 IconTextList(items: iconTextList),
+                                SizedBox(height: 10,),
+                                AditionalWeidget(items: AditionalList),
+                             
                               ],
                             ),
-                            const SizedBox(height: 10),
-                            /// Horizontal Icon List
+                            const SizedBox(height: 12),
+                        
                             
                             
                             /// Extra space/content to ensure scrolling is visible
                             const SizedBox(height: 20),
-                            // Add more widgets here to test scrolling
+                           
                           ],
                         ),
                       ),
 
-                      /// See More Button (Positioned over the grid/banner gap)
+                      
                       Positioned(
-                        top: -15, // Floating between Grid and Banner
+                        top: -18, // Floating between Grid and Banner
                         child: SeeMoreButton(
                           isExpanded: seeMore,
                           onTap: () {
