@@ -15,6 +15,7 @@ class _InboxScreenState extends State<InboxScreen> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Color(0xFFDE1670),
           centerTitle: true,

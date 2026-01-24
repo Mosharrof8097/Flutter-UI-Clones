@@ -61,7 +61,7 @@ class FavoNumberWidge extends StatelessWidget {
                ),
                child: Icon(
                  item.icon,
-                 color: Colors.grey,
+                 color: const Color.fromARGB(255, 205, 127, 153),
                  size: 28,
                ),
                              ), SizedBox(height: 6,),

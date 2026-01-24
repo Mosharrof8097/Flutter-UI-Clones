@@ -1,5 +1,6 @@
 import 'package:bkash_ui/screen/feature/appBar_feature/appbar_feature.dart';
 import 'package:bkash_ui/screen/feature/fvnumber/favo_number_widge.dart';
+import 'package:bkash_ui/screen/feature/others/other_weidge.dart';
 import 'package:bkash_ui/screen/feature/priyo_agent/priyo_agent_weidge.dart';
 import 'package:bkash_ui/screen/feature/reward/reward_card.dart';
 import 'package:bkash_ui/screen/inbox/section_weidge/notification/notificationpage.dart';
@@ -15,6 +16,7 @@ class _AmarBkashState extends State<AmarBkash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       
       body:SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
@@ -29,6 +31,7 @@ class _AmarBkashState extends State<AmarBkash> {
              SizedBox(height: 15,),
 
            PriyoAgentWeidge (),
+           OtherWeidge()//eror kno
             
            
             

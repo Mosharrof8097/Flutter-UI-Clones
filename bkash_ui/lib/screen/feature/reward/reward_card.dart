@@ -12,7 +12,7 @@ class RewardCard extends StatelessWidget {
         height: 95,
         decoration: BoxDecoration(
           border: Border.all(color: Colors.grey, width: 1.2),
-          color: const Color.fromARGB(255, 251, 247, 247),
+          color: Colors.white,
           borderRadius: BorderRadius.circular(12),
         ),
 
