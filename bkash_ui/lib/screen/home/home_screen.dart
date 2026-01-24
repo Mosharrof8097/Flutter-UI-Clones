@@ -4,6 +4,7 @@ import 'package:bkash_ui/screen/home/Widget/icon_list.dart';
 import 'package:bkash_ui/screen/home/imageWidge/image_slider.dart';
 import 'package:bkash_ui/screen/home/imageWidge/imagecardlist.dart';
 import 'package:bkash_ui/screen/home/imageWidge/semorebtn.dart';
+import 'package:bkash_ui/screen/home/otherseba/otherseba_weidge.dart';
 import 'package:bkash_ui/screen/home/quick_feature/aditional_feature/aditional_list.dart';
 import 'package:bkash_ui/screen/home/quick_feature/aditional_feature/aditional_weidget.dart';
 import 'package:bkash_ui/screen/home/quick_feature/quick_list.dart';
@@ -132,10 +133,11 @@ class _HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                             const SizedBox(height: 12),
+                            OnnoSebaSection(),
                         
                             
                             
-                            /// Extra space/content to ensure scrolling is visible
+                          
                             const SizedBox(height: 20),
                            
                           ],
