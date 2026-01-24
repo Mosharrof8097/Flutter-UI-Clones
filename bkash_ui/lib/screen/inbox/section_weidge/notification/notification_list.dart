@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 import 'package:bkash_ui/screen/inbox/section_weidge/notification/notification_model.dart';
 
 final List<OfferModel> notificationList = [
