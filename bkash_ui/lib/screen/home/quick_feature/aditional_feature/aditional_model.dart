@@ -3,6 +3,6 @@ class AditionalModel {
   final IconData icon;
   final String title;
   AditionalModel({required this.icon,
-    required this.title,});//
+    required this.title,});
 
 }
