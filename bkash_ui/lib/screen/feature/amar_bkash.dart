@@ -31,7 +31,7 @@ class _AmarBkashState extends State<AmarBkash> {
              SizedBox(height: 15,),
 
            PriyoAgentWeidge (),
-           OtherWeidge()//eror kno
+           OtherWeidge()
             
            
             
