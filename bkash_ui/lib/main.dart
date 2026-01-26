@@ -1,7 +1,5 @@
-import 'package:bkash_ui/navigation/bottom_nav.dart';
-import 'package:bkash_ui/screen/feature/appBar_feature/appbar_feature.dart';
-import 'package:bkash_ui/screen/flashscreen.dart';
-import 'package:bkash_ui/screen/welcomescreen.dart';
+
+import 'package:bkash_ui/app_entry.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,10 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      // home:Tabpage() ,
-      // home: Flashscreen(),
-      home: BottomNav(),
-      // home:  AppbarFeature(),
+      home: const AppEntry(),
+      
+     
     );
   }
 }

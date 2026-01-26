@@ -38,6 +38,8 @@ dependencies:
   carousel_slider: ^5.1.1
   flip_card: ^0.7.0
   mobile_scanner: ^7.1.4
+  shared_preferences: ^2.5.4
+  page_transition: ^2.2.1
 
 dev_dependencies:
   flutter_test:
